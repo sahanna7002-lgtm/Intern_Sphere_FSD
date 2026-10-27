@@ -1,0 +1,1 @@
+import {describe,it,expect} from 'vitest';import {roleHome,labelize} from '../lib/utils';describe('routing helpers',()=>{it('resolves three role dashboards',()=>{for(const role of ['student','admin','mentor'])expect(roleHome(role)).toBe(`/${role}/dashboard`)});it('formats status labels',()=>expect(labelize('under_review')).toBe('Under Review'));});

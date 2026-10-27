@@ -1,0 +1,3 @@
+import {cn} from '../../lib/utils';
+const variants={primary:'bg-primary text-primary-foreground hover:brightness-110 shadow-[0_6px_20px_rgba(99,91,255,.17)]',secondary:'bg-secondary text-secondary-foreground hover:brightness-95',outline:'border border-border bg-card hover:bg-secondary',ghost:'hover:bg-secondary text-foreground'};
+export function Button({className='',variant='primary',size='md',children,...props}){return <button {...props} className={cn('focus-ring inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-200 disabled:opacity-50',size==='sm'?'h-9 px-3 text-sm':'h-11 px-5 text-sm',variants[variant],className)}>{children}</button>}

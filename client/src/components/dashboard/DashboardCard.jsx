@@ -1,0 +1,1 @@
+export function DashboardCard({title,children,action}){return <section className="surface p-5 shadow-sm"><div className="mb-5 flex items-center justify-between gap-4"><h2 className="font-display text-base font-bold">{title}</h2>{action}</div>{children}</section>}

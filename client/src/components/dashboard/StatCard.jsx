@@ -1,0 +1,1 @@
+export function StatCard({label,value,icon:Icon}){return <div className="surface p-5 shadow-sm"><div className="flex items-center justify-between text-sm text-muted-foreground"><span>{label}</span>{Icon&&<Icon size={18} className="text-primary"/>}</div><div className="mt-4 font-display text-3xl font-bold tracking-tight">{value??'—'}</div></div>}

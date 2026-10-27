@@ -1,0 +1,1 @@
+import {clsx} from 'clsx'; import {twMerge} from 'tailwind-merge'; export const cn=(...args)=>twMerge(clsx(args)); export const roleHome=role=>`/${role}/dashboard`; export const formatDate=d=>d?new Date(d).toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'}):'—'; export const labelize=s=>String(s??'').replaceAll('_',' ').replace(/\b\w/g,x=>x.toUpperCase());

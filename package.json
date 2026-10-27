@@ -1,0 +1,21 @@
+{
+  "name": "internsphere",
+  "private": true,
+  "version": "0.4.0",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server",
+    "test": "npm run test -w server && npm run test -w client",
+    "seed": "npm run seed -w server",
+    "seed:opportunities": "npm run seed:opportunities -w server",
+    "seed:demo-reporting": "npm run seed:demo-reporting -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
